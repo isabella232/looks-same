@@ -63,7 +63,7 @@ type LooksSameCallback = (error: Error | null, result: LooksSameResult) => void;
 /**
  * The options passed to looksSame function
  */
-interface LooksSameOptions {
+export interface LooksSameOptions {
     /**
      * By default, it will detect only noticeable differences. If you wish to detect any difference, use strict options.
      */
@@ -156,7 +156,7 @@ interface CreateDiffAsBufferOptions {
 /**
  * The options passed to looksSame.createDiff function
  */
-interface CreateDiffOptions extends CreateDiffAsBufferOptions {
+export interface CreateDiffOptions extends CreateDiffAsBufferOptions {
     /**
      * The diff image path to store
      */
